@@ -9,8 +9,8 @@ const phons = [
 const input = document.getElementById('input');
 const btn = document.getElementById('btn');
 
-function Search (e){
-    e.preventDefault()
+function Search (a){
+    a.preventDefault()
     phons.forEach(element => {
         const regex = new RegExp(`${input.value}`, 'gi');
         const result = regex.test(phons)
